@@ -90,7 +90,7 @@ class SquareButton {
     this.el = el;
     this.color = options.color || el.dataset.color || '#0f172a';
     this.variant = options.variant || el.dataset.variant || 'contained';
-    this.borderRadius = Number(options.borderRadius ?? el.dataset.radius ?? 8);
+    this.borderRadius = Number(options.borderRadius ?? el.dataset.radius ?? 0);
     this.maxSquares = Number(options.maxSquares ?? el.dataset.maxSquares ?? 100);
     const width = Number(options.width ?? el.dataset.width ?? 200);
     const height = Number(options.height ?? el.dataset.height ?? 52);

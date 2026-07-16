@@ -16,6 +16,15 @@
 
 html { scroll-behavior: smooth; }
 
+.section, .footer { scroll-margin-top: 64px; }
+
+::selection { background: var(--blue); color: #fff; }
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+
 body {
   background: var(--bg);
   color: var(--ink);
@@ -185,7 +194,7 @@ main { max-width: 980px; margin: 0 auto; padding: 0 28px; }
   align-items: center;
   gap: 12px;
   font-family: var(--mono);
-  font-size: 13.5px;
+  font-size: 13px;
   padding: 9px 0;
 }
 .fact-list li + li { border-top: 1px dashed var(--line); }
@@ -238,7 +247,12 @@ main { max-width: 980px; margin: 0 auto; padding: 0 28px; }
   transform: translate(-3px, -3px);
   box-shadow: 12px 12px 0 0 var(--line);
 }
-.project-card canvas { margin-bottom: 16px; }
+.card-icon {
+  height: 68px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
 .project-card h3 { font-size: 17px; margin-bottom: 4px; }
 .card-kicker {
   font-family: var(--mono);
