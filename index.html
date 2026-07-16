@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gabriel Saunders · I make squares do things</title>
+  <meta name="description" content="Gabriel Saunders. Self-taught software engineer. No-code editors, cross-platform apps, and one polar bear radar." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='1' y='1' width='6' height='6' fill='%230f172a'/><rect x='9' y='1' width='6' height='6' fill='%233b82f6'/><rect x='1' y='9' width='6' height='6' fill='%23ef4444'/><rect x='9' y='9' width='6' height='6' fill='%2310b981'/></svg>" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="logo" href="#top" aria-label="home"><canvas id="logo-canvas"></canvas></a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Say hi</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-canvas" id="hero-canvas"></div>
+    <p class="hero-hint">click anywhere, the squares like it</p>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </header>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>self-taught software engineer</span><i></i>
+      <span>electrical engineer by degree</span><i></i>
+      <span>UI obsessive</span><i></i>
+      <span>web · iOS · Android from one codebase</span><i></i>
+      <span>writing code since before AI could</span><i></i>
+      <span>self-taught software engineer</span><i></i>
+      <span>electrical engineer by degree</span><i></i>
+      <span>UI obsessive</span><i></i>
+      <span>web · iOS · Android from one codebase</span><i></i>
+      <span>writing code since before AI could</span><i></i>
+    </div>
+  </div>
+
+  <main>
+    <section class="section reveal" id="about">
+      <h2><span class="h-sq"></span>Hi, I'm Gabe</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <strong>self-taught software engineer</strong> with a formal electrical
+            engineering degree (BYU '21, GPA 3.87, and the fundamentals are load-bearing).
+            That combination means I cover the stack in the literal sense: I've designed
+            PCBs and radar integrations, and I've spent years sweating the last pixel of
+            production UIs. Everything in between I taught myself, back <em>before AI could autocomplete a for-loop</em>.
+          </p>
+          <p>
+            For the last 4+ years I've been the lead developer on a digital therapeutics
+            platform, where I designed and built a <strong>no-code app editor</strong>:
+            clinicians drag and drop React components, apps are stored as JSON and rendered
+            live, and the whole thing ships to web, iOS, and Android from a single codebase.
+          </p>
+          <p>
+            I like software that regular people can actually use, and I believe an
+            interface can be serious without being boring. See: this entire website.
+          </p>
+          <div class="btn-row">
+            <a data-sq-btn data-color="#3b82f6" data-variant="contained" data-width="190" data-height="52" href="#projects">See the work</a>
+            <a data-sq-btn data-color="#0f172a" data-variant="outlined" data-width="150" data-height="52" href="mailto:igabe@icloud.com">Say hi</a>
+          </div>
+        </div>
+        <ul class="fact-list">
+          <li><span class="fact-sq c-blue"></span>Lead engineer, 8+ years building</li>
+          <li><span class="fact-sq c-red"></span>Taught radar to spot polar bears</li>
+          <li><span class="fact-sq c-green"></span>Apps live on both app stores</li>
+          <li><span class="fact-sq c-amber"></span>Built an actual arcade</li>
+          <li><span class="fact-sq c-ink"></span>Once shipped software to a donkey sanctuary</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reveal" id="work">
+      <h2><span class="h-sq"></span>Work</h2>
+      <div class="job">
+        <div class="job-head">
+          <h3>Square2 Systems</h3>
+          <span class="job-role">Lead Software Developer</span>
+          <span class="job-when">Dec 2021 – now</span>
+        </div>
+        <p>
+          Lead (and longest-serving) engineer on a digital therapeutics platform that lets
+          clinicians build app-based treatment programs for their patients. I own the UI
+          architecture end to end: the drag-and-drop editor, the shared component library
+          (React + StencilJS), and the patient apps: one React + Capacitor codebase,
+          rendered to web, iOS, and Android.
+        </p>
+        <div class="tags">
+          <span>TypeScript</span><span>React</span><span>StencilJS</span><span>Capacitor</span><span>Node.js</span>
+        </div>
+      </div>
+      <div class="job">
+        <div class="job-head">
+          <h3>HelpPays</h3>
+          <span class="job-role">Lead UI Developer</span>
+          <span class="job-when">2022 – 2023</span>
+        </div>
+        <p>
+          Led UI for a peer-to-peer lending platform: borrower and lender experiences,
+          account dashboards, lending workflows, and payment API integrations. Money UIs
+          have zero tolerance for ambiguity; it sharpened mine to match.
+        </p>
+        <div class="tags"><span>Angular</span><span>TypeScript</span><span>Payment APIs</span></div>
+      </div>
+      <div class="job">
+        <div class="job-head">
+          <h3>Freelance</h3>
+          <span class="job-role">Full-Stack Developer</span>
+          <span class="job-when">2021 – 2022</span>
+        </div>
+        <p>
+          Scoped, built, and shipped client web apps end to end, including an operations
+          platform for an animal sanctuary (intake records, medication schedules, daily
+          care). The users were human. The stakeholders were donkeys.
+        </p>
+        <div class="tags"><span>Full-stack</span><span>Firebase</span><span>GCP</span></div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <h2><span class="h-sq"></span>Things I've built on purpose</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <canvas data-icon="polarBear" data-cell="7"></canvas>
+          <h3>Polar Bear Early-Warning System</h3>
+          <p class="card-kicker">Founder · hardware + software</p>
+          <p>
+            Radar that watches for polar bears and warns Arctic communities in real time,
+            straight to their phones. The company didn't make it; the engineering did.
+          </p>
+        </article>
+        <article class="project-card">
+          <canvas data-icon="wrench" data-cell="7"></canvas>
+          <h3>Contractor Logistics Platform</h3>
+          <p class="card-kicker">Founder · full-stack</p>
+          <p>
+            Time tracking, scheduling, dispatch, and equipment tracking for contracting
+            crews. A whole back office in one tool.
+          </p>
+        </article>
+        <article class="project-card">
+          <canvas data-icon="controller" data-cell="7"></canvas>
+          <h3>An Arcade</h3>
+          <p class="card-kicker">Builder · wood, wires, software</p>
+          <p>
+            Yes, a real one. Buttons, joystick, glowing marquee. Best deploy target
+            I've ever shipped to.
+          </p>
+        </article>
+        <article class="project-card">
+          <canvas data-icon="donkey" data-cell="7"></canvas>
+          <h3>Sanctuary Ops</h3>
+          <p class="card-kicker">Client work · web app</p>
+          <p>
+            A ledger for a donkey sanctuary: intakes, medication schedules, care tracking.
+            Quietly one of the most useful things I've made.
+          </p>
+        </article>
+        <article class="project-card">
+          <canvas data-icon="plate" data-cell="7"></canvas>
+          <h3>Food Review Social App</h3>
+          <p class="card-kicker">Side project · social</p>
+          <p>
+            A social platform for reviewing food with friends, because star ratings from
+            strangers are a lie.
+          </p>
+        </article>
+        <article class="project-card">
+          <canvas data-icon="editor" data-cell="7"></canvas>
+          <h3>The No-Code Editor</h3>
+          <p class="card-kicker">Day job · my favorite problem</p>
+          <p>
+            Drag-and-drop components, JSON-defined apps, live preview, undo/redo,
+            publishing. Building the tool that builds the apps.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="skills">
+      <h2><span class="h-sq"></span>Toolbox</h2>
+      <div class="skills-rows">
+        <div class="skills-row">
+          <span class="skills-label">Frontend</span>
+          <div class="tags"><span>TypeScript</span><span>React</span><span>Next.js</span><span>StencilJS</span><span>Angular</span><span>HTML/CSS</span></div>
+        </div>
+        <div class="skills-row">
+          <span class="skills-label">Mobile</span>
+          <div class="tags"><span>Capacitor</span><span>App Store</span><span>Google Play</span></div>
+        </div>
+        <div class="skills-row">
+          <span class="skills-label">Backend</span>
+          <div class="tags"><span>Node.js</span><span>REST APIs</span><span>WebSockets</span><span>Firebase</span><span>Google Cloud</span></div>
+        </div>
+        <div class="skills-row">
+          <span class="skills-label">Also</span>
+          <div class="tags"><span>Design systems</span><span>Data viz</span><span>Radar hardware</span><span>PCB design</span><span>Canvas tricks</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-canvas" id="footer-canvas"></div>
+    <div class="footer-content">
+      <a data-sq-btn data-color="#0f172a" data-variant="contained" data-width="250" data-height="56" href="mailto:igabe@icloud.com">igabe@icloud.com</a>
+      <a data-sq-btn data-color="#3b82f6" data-variant="outlined" data-width="250" data-height="56" href="https://github.com/mooalot" target="_blank" rel="noopener">github.com/mooalot</a>
+    </div>
+    <p class="footer-note">© 2026 Gabriel Saunders · hand-placed squares, zero templates</p>
+  </footer>
+
+  <script src="patterns.js"></script>
+  <script src="squares.js"></script>
+  <script src="squares-button.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
