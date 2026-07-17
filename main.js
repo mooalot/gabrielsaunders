@@ -92,6 +92,19 @@ document.querySelectorAll('canvas[data-icon]').forEach((canvas) => {
   if (shape) drawPixelIcon(canvas, shape.pattern, shape.colorMap, Number(canvas.dataset.cell) || 6);
 });
 
+// assemble the email from parts so scrapers reading raw HTML get nothing
+const emailBtn = document.getElementById('email-btn');
+if (emailBtn) {
+  const addr = `${emailBtn.dataset.user}@${emailBtn.dataset.domain}`;
+  emailBtn.textContent = addr;
+  emailBtn.href = `mailto:${addr}`;
+}
+// the "Say hi" button links to the same address without exposing it in source
+const sayhiBtn = document.getElementById('sayhi-btn');
+if (sayhiBtn) {
+  sayhiBtn.href = `mailto:${sayhiBtn.dataset.user}@${sayhiBtn.dataset.domain}`;
+}
+
 // buttons
 const squareButtons = initSquareButtons();
 
